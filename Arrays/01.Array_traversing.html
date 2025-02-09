@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Traversing Array</title>
+    <script>
+        const data = [10,7,4,3,20,6,8,9,5,40,76,32];
+
+        for(let i=0; i<data.length; i++){
+            // document.write(`${data[i]} <br>`)
+        }
+
+        
+        // const btn = document.getElementsByTagName('button')
+
+        function getElement(){
+            const el = document.querySelector('input').value
+
+            if(el<data.length && typeof parseInt() && el>=0){
+                alert(data[el])
+            }else{
+                alert('Please Enter Valid Number');
+            }
+        }
+
+        
+    </script>
+</head>
+<body>
+    <input type="text">
+    <button onclick="getElement()">Search</button>
+</body>
+</html>

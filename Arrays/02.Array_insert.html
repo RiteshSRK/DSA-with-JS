@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Traversing Array</title>
+    <script>
+        const data = [9,5,40,76,32];
+
+        // Ek hum splice method se ker sakte hai
+        // const newArr = data.splice(1,0,27)
+        // console.log(data)
+
+
+        // Use Custom function
+        const newEl = 27;
+        const position = 1;
+
+        for(let i=data.length-1; i>=0; i--){
+            if(i >= position){
+                data[i+1] = data[i]
+                if(i === position){
+                    data[i] = newEl
+                }
+            }
+            
+        }
+
+        console.log(data)
+        
+    </script>
+</head>
+<body>
+    <!-- <input type="text">
+    <button onclick="getElement()">Search</button> -->
+</body>
+</html>
