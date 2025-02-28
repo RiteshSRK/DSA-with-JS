@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Traversing Array</title>
+    <script>
+        const data = [9,5,40,76,32];
+        const position = 3;
+
+        // function removeElement(){
+        //     let position = document.getElementById("position").value;
+        //     data.splice(position,1)             // data.splice(position,Infinity)
+        //     console.log(data)
+        // }
+
+        function removeEl(){
+            let position = document.getElementById("position").value;
+
+            for(let i=position; i<data.length-1; i++){
+                data[i] = data[i+1]
+                console.log(data) 
+                
+            }
+
+        }
+        
+        
+    </script>
+</head>
+<body>
+    <input type="text" id="position">
+    <button onclick="removeElement()">remove</button>  <!--  Array Methods -->
+    <button onclick="removeEl()">removeEl</button>      <!-- Using Function -->
+</body>
+</html>
